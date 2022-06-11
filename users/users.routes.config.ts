@@ -6,4 +6,7 @@ export class UsersRoutes extends CommonRoutesConfig {
     // hijo
     super(app, 'UsersRoutes'); // padre
   }
+  configureRoutes() {
+    return this.app;
+  }
 }
