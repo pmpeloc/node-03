@@ -12,7 +12,7 @@ import debug from 'debug';
 
 const log: debug.IDebugger = debug('app:users-controller');
 class UsersController {
-  async listUser(req: express.Request, res: express.Response) {
+  async listUsers(req: express.Request, res: express.Response) {
     const users = await usersService.list(100, 0);
     res.status(200).send(users);
   }
