@@ -3,9 +3,6 @@ import usersService from '../../users/services/users.service';
 import * as argon2 from 'argon2';
 
 class AuthMiddleware {
-  constructor() {
-    console.log('Auth Middleware');
-  }
   async verifyUserPassword(
     req: express.Request,
     res: express.Response,
